@@ -1,0 +1,20 @@
+.page-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.row {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+}
+.row:nth-child(even){
+    background-color: #fdfdfd;
+  }
+.row:nth-child(odd){
+    background-color: #efefef;
+}
+.row.grid-header {
+    background-color: #bebebe;
+    justify-content: center;
+    border-top: 1px solid;
+}

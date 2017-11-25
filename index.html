@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="usa-presidents">
+<head>
+    <title>USA Presidents</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="presidents.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid text-center page-header">
+        <h1>Presidents of the USA</h1>
+    </div>
+    <div class="container-fluid">        
+        <div class="col-sm-4 mx-auto" ng-controller="PresidentController">
+            <div class="row col-sm-12 grid-header">
+                <h4>Name</h4>
+            </div>
+            <div class="row col-sm-12" ng-repeat="president in presidents">
+                <div class="col-sm-4 text-right">{{$index + 1}}.</div>
+                <div class="col-sm-8">{{president.name}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
