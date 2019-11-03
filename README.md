@@ -1,2 +1,2 @@
-# USA-Presidents-App
-Web app to display information about the presidents of the USA
+# AngularJS-App
+An AngularJS Web app to retrieve information about presidents of the USA from an API and display them in the UI
